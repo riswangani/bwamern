@@ -14,6 +14,7 @@ export default class LandingPage extends Component {
     this.refMostPicked = React.createRef();
   }
   render() {
+    console.log(this.props);
     return (
       <>
         <Header {...this.props}></Header>
@@ -23,7 +24,7 @@ export default class LandingPage extends Component {
           data={landingPage.mostPicked}
         />
         <Categories data={landingPage.categories} />
-        <Testimony></Testimony>
+        <Testimony data={landingPage.testimonial}></Testimony>
       </>
     );
   }
